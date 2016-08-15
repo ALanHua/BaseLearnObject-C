@@ -10,6 +10,7 @@
 		B8885F461D58E31000570845 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8885F451D58E31000570845 /* main.m */; };
 		B8885F531D58E3E300570845 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8885F521D58E3E300570845 /* main.m */; };
 		B8E194881D60C2E300E08C84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E194871D60C2E300E08C84 /* main.m */; };
+		B8E1948E1D62094500E08C84 /* YHPSort.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E1948D1D62094500E08C84 /* YHPSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,8 @@
 		B8885F521D58E3E300570845 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8E194851D60C2E300E08C84 /* 面试题 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "面试题"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E194871D60C2E300E08C84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B8E1948C1D62094500E08C84 /* YHPSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHPSort.h; sourceTree = "<group>"; };
+		B8E1948D1D62094500E08C84 /* YHPSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHPSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				B8E194871D60C2E300E08C84 /* main.m */,
+				B8E1948C1D62094500E08C84 /* YHPSort.h */,
+				B8E1948D1D62094500E08C84 /* YHPSort.m */,
 			);
 			path = "面试题";
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8E194881D60C2E300E08C84 /* main.m in Sources */,
+				B8E1948E1D62094500E08C84 /* YHPSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YHPSort.h"
 /**
  *  c/c++ 面试题
  */
@@ -43,9 +44,74 @@ void test04(void)
     2，数组名表示数组首地址指针，不可以用++，等运算符
     3，sizeof 使用产生的效果不一样
  */
+
+//6, static的作用
+/**
+    1,函数体内的变量---变量的内存只被分配一次，因此其值在下次调用时仍维持上次的值
+    2,模块内------全局变量可以被模块内所用函数访问，但不能被模块外其它函数访问
+    3，在类中------的static成员变量属于整个类所拥有，对类的所有对象只有一份拷贝
+ */
+// 7，简述内存分区情况
+/*
+ 1,代码区：存放函数二进制代码
+ 2,数据区：系统运行时申请内存并初始化，系统退出时由系统释放，存放全局变量、静态变量、常量
+ 3,堆区：通过malloc等函数或new等操作符动态申请得到，需程序员手动申请和释放
+ 4,栈区：函数模块内申请，函数结束时由系统自动释放，存放局部变量、函数参数
+ */
+// 8,＃include 和＃include ”filename”有什么区别?
+/*
+ ＃include <filename>直接在库文件目录中搜索所包含的文件而＃include ”filename”在当前目录下搜索所包含的文件，如果没有的话再到库文件目录搜索。
+ */
+// 9. 下面四个修饰指针有什么区别?
+/**
+ const char *p;             // *p 的内容只读
+ char const *p;             // *p 的内容只读
+ char * const p;            // p 的地址只读
+ const char * const p;      /// p 的地址和内容都只读
+ */
+// 10. 用过哪些排序算法？
+/**
+ *  冒泡排序法
+ */
+#define SWAP(a,b,T)    {T temp = a;a = b;b= temp;}
+// c 语言版
+void bubbleSort(int * unsort,int len)
+{
+    int i,j;
+    for (i = 0; i < len -1; i++) {
+        for (j= len - 1; j > i; j--) {
+            if (unsort[j] < unsort[j-1]) {
+                SWAP(unsort[j],unsort[j-1],int);
+            }
+        }
+    }
+}
+
+
+void printIntArray(int * unsort,int len)
+{
+    int i;
+    for (i = 0; i < len; i++) {
+        printf("%d ",unsort[i]);
+    }
+    printf("\n");
+}
+void test10(void)
+{
+    int a[10] = {10,8,7,1,2,4,39,3,200,9};
+    int length = sizeof(a)/sizeof(int);
+    printIntArray(a,length);
+    bubbleSort(a,length);
+    printIntArray(a,length);
+    NSMutableArray* arr = [NSMutableArray arrayWithObjects:@10,@8,@7,@1,@2,@4,@39,@3,@200,@9, nil];
+    NSLog(@"%@,%ld",arr,arr.count);
+    [YHPSort bubbleSort:arr];
+    NSLog(@"%@",arr);
+}
+
 int main(int argc, const char * argv[]) {
     
-    test04();
-        
+//    test10();
+    
     return 0;
 }
