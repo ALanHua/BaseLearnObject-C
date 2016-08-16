@@ -21,4 +21,20 @@
         }
     }
 }
+
++(void)insertSort:(NSMutableArray*)array
+{
+    NSInteger i,j,key;
+    for (i = 1; i < array.count; i++) {
+        key = [[array objectAtIndex:i]intValue];
+        for (j = i; j > 0; j--) {
+            if ([[array objectAtIndex:j-1]intValue] > key) {
+                [array exchangeObjectAtIndex:j withObjectAtIndex:j-1];
+            }else{
+                break;
+            }
+        }
+        [array replaceObjectAtIndex:j withObject:@(key)];
+    }
+}
 @end

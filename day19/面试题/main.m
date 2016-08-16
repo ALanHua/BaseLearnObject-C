@@ -86,7 +86,24 @@ void bubbleSort(int * unsort,int len)
         }
     }
 }
-
+/**
+ * 插入排序
+ */
+void insertSort(int * unsort,int len)
+{
+    int i,j,key;
+    for (i = 1; i < len; i++) {
+        key = unsort[i];
+        for (j = i; j > 0; j--) {
+            if (unsort[j-1] > key) {
+                unsort[j] = unsort[j-1];
+            }else{
+                break;
+            }
+        }
+        unsort[j] = key;
+    }
+}
 
 void printIntArray(int * unsort,int len)
 {
@@ -103,15 +120,24 @@ void test10(void)
     printIntArray(a,length);
     bubbleSort(a,length);
     printIntArray(a,length);
+    
     NSMutableArray* arr = [NSMutableArray arrayWithObjects:@10,@8,@7,@1,@2,@4,@39,@3,@200,@9, nil];
-    NSLog(@"%@,%ld",arr,arr.count);
     [YHPSort bubbleSort:arr];
     NSLog(@"%@",arr);
+    
+    int a1[10] = {190,8,70,10,21,43,394,35,200,9};
+    length = sizeof(a1)/sizeof(int);
+    insertSort(a1,length);
+    printIntArray(a1,length);
+    
+    NSMutableArray* arr2 = [NSMutableArray arrayWithObjects:@100,@80,@70,@10,@20,@4,@39,@3,@200,@9, nil];
+    [YHPSort insertSort:arr2];
+    NSLog(@"%@",arr2);
 }
 
 int main(int argc, const char * argv[]) {
     
-//    test10();
+    test10();
     
     return 0;
 }
