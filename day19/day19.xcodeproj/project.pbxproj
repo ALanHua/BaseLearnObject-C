@@ -11,6 +11,7 @@
 		B8885F531D58E3E300570845 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8885F521D58E3E300570845 /* main.m */; };
 		B8E194881D60C2E300E08C84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E194871D60C2E300E08C84 /* main.m */; };
 		B8E1948E1D62094500E08C84 /* YHPSort.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E1948D1D62094500E08C84 /* YHPSort.m */; };
+		B8E1950F1D6495F500E08C84 /* YHPPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E1950E1D6495F500E08C84 /* YHPPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,8 @@
 		B8E194871D60C2E300E08C84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8E1948C1D62094500E08C84 /* YHPSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHPSort.h; sourceTree = "<group>"; };
 		B8E1948D1D62094500E08C84 /* YHPSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHPSort.m; sourceTree = "<group>"; };
+		B8E1950D1D6495F500E08C84 /* YHPPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHPPerson.h; sourceTree = "<group>"; };
+		B8E1950E1D6495F500E08C84 /* YHPPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHPPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				B8E194871D60C2E300E08C84 /* main.m */,
+				B8E1950D1D6495F500E08C84 /* YHPPerson.h */,
+				B8E1950E1D6495F500E08C84 /* YHPPerson.m */,
 				B8E1948C1D62094500E08C84 /* YHPSort.h */,
 				B8E1948D1D62094500E08C84 /* YHPSort.m */,
 			);
@@ -185,6 +190,7 @@
 		B8885F3A1D58E31000570845 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YHP;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = YouHuaPei;
 				TargetAttributes = {
@@ -241,6 +247,7 @@
 			files = (
 				B8E194881D60C2E300E08C84 /* main.m in Sources */,
 				B8E1948E1D62094500E08C84 /* YHPSort.m in Sources */,
+				B8E1950F1D6495F500E08C84 /* YHPPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +414,7 @@
 				B8E1948A1D60C2E300E08C84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

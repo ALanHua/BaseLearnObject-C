@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "YHPSort.h"
+#import "YHPPerson.h"
 /**
  *  c/c++ 面试题
  */
@@ -134,10 +135,63 @@ void test10(void)
     [YHPSort insertSort:arr2];
     NSLog(@"%@",arr2);
 }
+/**
+ * 11．堆与栈的区别
+ 1,栈----就是有操作系统自动分配释放的一般存放变量及函数参数
+ 2,堆----程序员通过malloc或者new自己分配释放的
+ */
+
+/*
+ * 12 #import和#include的区别？
+ 头文件导入。。。
+1， #import是Objective-C导入头文件的语法，可保证不会重复导入。
+2， #include是C/C++导入头文件的语法，如果是Objective-C与C/C++混编码，对于C/C++类型的文件，还是使用#include来引入，这种写法需要添加防重复导入的语法。
+ */
+/*
+ * 13，@class的作用
+ 1,前先声明，把这个类当做类型来用，不关心里面的细节
+ 2，提高编译效率，节省时间
+ */
+
+/*
+ * 14,用NSLog函数输出一个浮点类型，结果四舍五入，并保留一位小数
+ */
+void test14(void)
+{
+    float a = 3.1615926;
+    NSLog(@"%.1f",a);
+}
+/*
+ * 15.property属性的修饰符有什么样的作用
+ 1,getter=getName、setter=setName：设置setter与getter的方法名
+ 2,readwrite、readonly：设置可供访问级别
+ 3,assign：方法直接赋值，不进行任何retain操作，为了解决原类型与环循引用问题
+ 4,retain：其setter方法对参数进行release旧值再retain新值，所有实现都是这个顺序
+ 5,其setter方法进行copy操作，与retain处理流程一样，先对旧值release，再copy出新的对象，retainCount为1。这是为了减少对上下文的依赖而引入的机制。
+ 6,nonatomic：非原子性访问，不加同步， 多线程并发访问会提高性能。注意，如果不加此属性，则默认是两个访问方法都为原子型事务访问。
+ 7,unsafe_unretained：用unsafe_unretained声明的指针，指针指向的对象一旦被释放，这些指针将成为野指针
+ */
+void test15(void)
+{
+    NSString* hahaString = @"哈哈";
+    NSString* heheString = [hahaString copy];
+    NSLog(@"%p, %p", hahaString, heheString);
+    NSLog(@"%@, %@", hahaString, heheString);
+    heheString = @"呵呵";
+    NSLog(@"%@, %@", hahaString, heheString);
+
+    YHPPerson* lili = [[YHPPerson alloc]init];
+    lili.name = @"LiLi";
+    lili.unsafeName =  lili.name;
+    lili.name = nil;
+    NSLog(@"%@",lili.unsafeName);
+    
+    
+}
 
 int main(int argc, const char * argv[]) {
     
-    test10();
+    test15();
     
     return 0;
 }
