@@ -106,6 +106,25 @@ void insertSort(int * unsort,int len)
     }
 }
 
+void selectSort(int* unsort,int len)
+{
+    int i,j;
+    int min = 0;
+    
+    for (i = 0; i < len - 1; i++) {
+        min = i;
+        for (j = i + 1; j < len; j++) {
+            if (unsort[j] < unsort[min] ) {
+                min = j;
+            }
+        }
+        
+        if (min != i) {
+            SWAP(unsort[i],unsort[min],int);
+        }
+    }
+}
+
 void printIntArray(int * unsort,int len)
 {
     int i;
@@ -119,7 +138,8 @@ void test10(void)
     int a[10] = {10,8,7,1,2,4,39,3,200,9};
     int length = sizeof(a)/sizeof(int);
     printIntArray(a,length);
-    bubbleSort(a,length);
+//    bubbleSort(a,length);
+    selectSort(a,length);
     printIntArray(a,length);
     
     NSMutableArray* arr = [NSMutableArray arrayWithObjects:@10,@8,@7,@1,@2,@4,@39,@3,@200,@9, nil];
@@ -132,7 +152,8 @@ void test10(void)
     printIntArray(a1,length);
     
     NSMutableArray* arr2 = [NSMutableArray arrayWithObjects:@100,@80,@70,@10,@20,@4,@39,@3,@200,@9, nil];
-    [YHPSort insertSort:arr2];
+//    [YHPSort insertSort:arr2];
+    [YHPSort selectSort: arr2];
     NSLog(@"%@",arr2);
 }
 /**
@@ -189,9 +210,36 @@ void test15(void)
     
 }
 
+/*
+ * 16,self.name=@object和name=@object有什么不同?
+ * self.name 会调用setName方法
+ */
+
+/*
+ * 17,viewDidLoad、loadView和viewDidUnload何时调用
+ * 1, viewDidLoad 加载完毕时候地阿姨
+   2，loadView 在controller的view为nil时候调用
+   3，viewDidUnload 不能直接调用了
+ */
+
+/*
+ * 18,objective-c中的可变与不可变词典
+ * 可变字典可以增,删,改操作
+ * 不可变字典不能操作
+ */
+/**
+ * 19,Objective-C的内存管理
+    MRC --- ARC
+ */
+
+/**
+  重写getter/setter方法
+ */
+
+
 int main(int argc, const char * argv[]) {
     
-    test15();
+    test10();
     
     return 0;
 }

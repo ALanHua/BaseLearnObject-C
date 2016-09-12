@@ -23,5 +23,11 @@
  *  @param array 需要排序的数组
  */
 +(void)insertSort:(NSMutableArray*)array;
+/**
+ *  选择排序
+ *
+ *  @param array 需要排序的数组
+ */
++(void)selectSort:(NSMutableArray*)array;
 
 @end

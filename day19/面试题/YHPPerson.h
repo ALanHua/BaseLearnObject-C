@@ -21,4 +21,7 @@ typedef void (^YHPTestBlock)(NSString* name);
 @property(nonatomic,unsafe_unretained)NSString* unsafeName;
 
 @property (nonatomic,copy)YHPTestBlock testBlock;
+
+@property(nonatomic,copy)NSString* blogName;
+
 @end
