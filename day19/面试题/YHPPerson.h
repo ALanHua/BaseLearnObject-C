@@ -24,4 +24,6 @@ typedef void (^YHPTestBlock)(NSString* name);
 
 @property(nonatomic,copy)NSString* blogName;
 
++(instancetype)sharePerson;
+
 @end

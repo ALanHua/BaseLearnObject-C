@@ -236,6 +236,48 @@ void test15(void)
   重写getter/setter方法
  */
 
+/**
+ * 21， obj在编译时和运行时分别时什么类型的对象
+ NSString *obj = [[NSData alloc] init];
+ 编译时：obj 是 NSString
+ 运行时  obj = ((id (*)(id, SEL))objc_msgSend)((id)obj, @selector(init)); 即isa
+ 指针确定
+ */
+/**
+ * 22. id声明的对象有什么特性？
+    可以指向任意类型
+ */
+/**
+ 22. Objective-C中有私有方法、私有变量么？
+    可以在.m文件内声明
+ */
+
+/**
+ 23,Objective-C中有私有方法、私有变量么？
+ 
+ [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier]
+ 
+ */
+
+/*
+ 24. nil与NULL的区别
+ NULL  --->  C 语言中表示空指针
+ nil  ---->  OC中表示对象的值为空，nil对象调用方法表示不执行也不崩溃
+ **/
+
+/*
+ 25. Category是什么，何时使用？
+    类扩展，可以给类型增加方法
+ **/
+
+/*
+ 26,什么是Delegate？常用场景？
+    代理，设计模式的一种，让别人按照自己要求办事情
+ **/
+
+/*
+ 27,什么是单例，如何设计单例？
+ **/
 
 int main(int argc, const char * argv[]) {
     
