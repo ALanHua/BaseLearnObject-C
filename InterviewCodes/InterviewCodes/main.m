@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #include "Interview01.h"
+#include "interview02.h"
 
 int main(int argc, const char * argv[]) {
     
-    interview01Test();
+    interView02Test();
     return 0;
 }
