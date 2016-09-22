@@ -10,6 +10,7 @@
 		B8189E151D918CDC0083EFEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8189E141D918CDC0083EFEE /* main.m */; };
 		B8189E1D1D918CF90083EFEE /* Interview01.c in Sources */ = {isa = PBXBuildFile; fileRef = B8189E1B1D918CF90083EFEE /* Interview01.c */; };
 		B8189E201D92E0620083EFEE /* interview02.c in Sources */ = {isa = PBXBuildFile; fileRef = B8189E1E1D92E0620083EFEE /* interview02.c */; };
+		B8189E261D9438860083EFEE /* Interview03.c in Sources */ = {isa = PBXBuildFile; fileRef = B8189E241D9438860083EFEE /* Interview03.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		B8189E1C1D918CF90083EFEE /* Interview01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interview01.h; sourceTree = "<group>"; };
 		B8189E1E1D92E0620083EFEE /* interview02.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = interview02.c; sourceTree = "<group>"; };
 		B8189E1F1D92E0620083EFEE /* interview02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interview02.h; sourceTree = "<group>"; };
+		B8189E241D9438860083EFEE /* Interview03.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Interview03.c; sourceTree = "<group>"; };
+		B8189E251D9438860083EFEE /* Interview03.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interview03.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				B8189E1C1D918CF90083EFEE /* Interview01.h */,
 				B8189E1E1D92E0620083EFEE /* interview02.c */,
 				B8189E1F1D92E0620083EFEE /* interview02.h */,
+				B8189E241D9438860083EFEE /* Interview03.c */,
+				B8189E251D9438860083EFEE /* Interview03.h */,
 			);
 			path = InterviewCodes;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			files = (
 				B8189E201D92E0620083EFEE /* interview02.c in Sources */,
 				B8189E1D1D918CF90083EFEE /* Interview01.c in Sources */,
+				B8189E261D9438860083EFEE /* Interview03.c in Sources */,
 				B8189E151D918CDC0083EFEE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
