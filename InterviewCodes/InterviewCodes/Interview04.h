@@ -10,6 +10,6 @@
 #define Interview04_h
 
 #include <stdio.h>
-#include "List.h"
 
+void interView04Test(void);
 #endif /* Interview04_h */

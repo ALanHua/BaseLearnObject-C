@@ -60,3 +60,20 @@ void printListReversinglyAndRecursively(ListNode* pHead)
         printf("Reversiving List:%d\n",pHead->m_nValue);
     }
 }
+// 创建简单单链表
+ListNode* creatAList(int nodesCount)
+{
+    // 创建5个节点
+    ListNode* pHead = NULL;
+    for (int i = 1; i <= nodesCount; i++) {
+        addToTail(&pHead,i);
+    }
+    return pHead;
+}
+/*
+ 从尾到头打印链表
+ */
+void printListReversinglyAndIteratively(ListNode* pHead)
+{
+    
+}

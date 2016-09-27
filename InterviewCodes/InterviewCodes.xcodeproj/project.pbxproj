@@ -13,6 +13,7 @@
 		B8189E261D9438860083EFEE /* Interview03.c in Sources */ = {isa = PBXBuildFile; fileRef = B8189E241D9438860083EFEE /* Interview03.c */; };
 		B84C79F71D996E43009F5BB6 /* Interview04.c in Sources */ = {isa = PBXBuildFile; fileRef = B84C79F51D996E43009F5BB6 /* Interview04.c */; };
 		B8B4D5EE1D99704800B4FB3D /* List.c in Sources */ = {isa = PBXBuildFile; fileRef = B8B4D5EC1D99704800B4FB3D /* List.c */; };
+		B8B4D6001D9ACAE900B4FB3D /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = B8B4D5FE1D9ACAE900B4FB3D /* Stack.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		B84C79F61D996E43009F5BB6 /* Interview04.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interview04.h; sourceTree = "<group>"; };
 		B8B4D5EC1D99704800B4FB3D /* List.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = List.c; sourceTree = "<group>"; };
 		B8B4D5ED1D99704800B4FB3D /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		B8B4D5FE1D9ACAE900B4FB3D /* Stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Stack.c; sourceTree = "<group>"; };
+		B8B4D5FF1D9ACAE900B4FB3D /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 			children = (
 				B8B4D5EC1D99704800B4FB3D /* List.c */,
 				B8B4D5ED1D99704800B4FB3D /* List.h */,
+				B8B4D5FE1D9ACAE900B4FB3D /* Stack.c */,
+				B8B4D5FF1D9ACAE900B4FB3D /* Stack.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 				B8189E261D9438860083EFEE /* Interview03.c in Sources */,
 				B84C79F71D996E43009F5BB6 /* Interview04.c in Sources */,
 				B8189E151D918CDC0083EFEE /* main.m in Sources */,
+				B8B4D6001D9ACAE900B4FB3D /* Stack.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

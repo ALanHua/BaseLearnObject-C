@@ -7,20 +7,14 @@
 //
 
 #include "Interview04.h"
-/*
-从尾到头打印链表
- */
-void printListReversinglyAndIteratively(ListNode* pHead)
-{
-    
-}
+#include "List.h"
+#include <stdlib.h>
+#include <string.h>
 
-void printListReversinglyAndRecursively(ListNode* pHead)
+void interView04Test(void)
 {
-    if (pHead != NULL) {
-        if (pHead->m_pNext != NULL) {
-            printListReversinglyAndRecursively(pHead->m_pNext);
-        }
-        printf("Reversiving List:%d\n",pHead->m_nValue);
-    }
+    // 创建链表
+    ListNode* list;
+    list = creatAList(5);
+    printListReversinglyAndRecursively(list);
 }
