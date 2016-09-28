@@ -10,11 +10,22 @@
 #define Stack_h
 
 #include <stdio.h>
+#include <stdbool.h>
+typedef struct list{
+    struct list* next;
+}List_head;
 
-
-
-typedef struct Stack{
-    
+typedef struct {
+    List_head* top;
 }Stack;
 
+#define list_emtry(type,pos,member) \
+(type*)((char*)pos-(unsigned long)(&((type*)0)->member))
+
+void initStack(Stack* s);
+void stackPush(Stack* s,List_head* p);
+List_head* stackPop(Stack* s);
+bool isStackEmpty(Stack* s);
+
+//void stackMoudleTest(void);
 #endif /* Stack_h */

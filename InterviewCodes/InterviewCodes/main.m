@@ -11,8 +11,11 @@
 #include "interview02.h"
 #include "Interview03.h"
 #include "Interview04.h"
+#include "Stack.h"
+
 int main(int argc, const char * argv[]) {
     
-    interView04Test();
+//    interView04Test();
+
     return 0;
 }
