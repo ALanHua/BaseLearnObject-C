@@ -15,7 +15,7 @@
 
 int main(int argc, const char * argv[]) {
     
-//    interView04Test();
+    interView04Test();
 
     return 0;
 }

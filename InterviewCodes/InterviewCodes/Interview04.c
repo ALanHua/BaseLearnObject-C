@@ -16,5 +16,6 @@ void interView04Test(void)
     // 创建链表
     ListNode* list;
     list = creatAList(5);
-    printListReversinglyAndRecursively(list);
+//    printListReversinglyAndRecursively(list);
+    printListReversinglyAndIteratively(list);
 }

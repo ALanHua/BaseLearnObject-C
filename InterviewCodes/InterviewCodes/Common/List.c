@@ -8,6 +8,12 @@
 
 #include "List.h"
 #include <stdlib.h>
+#include "Stack.h"
+
+typedef struct{
+    List_head member;
+    ListNode data;
+}helpStackNode;
 
 void addToTail(ListNode** pHead,int value)
 {
@@ -60,6 +66,29 @@ void printListReversinglyAndRecursively(ListNode* pHead)
         printf("Reversiving List:%d\n",pHead->m_nValue);
     }
 }
+
+void printListReversinglyAndIteratively(ListNode* pHead)
+{
+    Stack s;
+    ListNode* pNode = pHead;
+    List_head* pTemp;
+    helpStackNode* pHelpTemp;
+    
+    initStack(&s);
+    while (pNode != NULL) {
+        helpStackNode* helpNode = (helpStackNode*)malloc(sizeof(helpStackNode));
+        helpNode->data = *pNode;
+        stackPush(&s, &helpNode->member);
+        pNode = pNode->m_pNext;
+    }
+    
+    while (!isStackEmpty(&s)) {
+        pTemp = stackPop(&s);
+        pHelpTemp = list_emtry(helpStackNode, pTemp, member);
+        printf("Reversiving List:%d\n",(pHelpTemp->data).m_nValue);
+        free(pHelpTemp);
+    }
+}
 // 创建简单单链表
 ListNode* creatAList(int nodesCount)
 {
@@ -69,11 +98,4 @@ ListNode* creatAList(int nodesCount)
         addToTail(&pHead,i);
     }
     return pHead;
-}
-/*
- 从尾到头打印链表
- */
-void printListReversinglyAndIteratively(ListNode* pHead)
-{
-    
 }

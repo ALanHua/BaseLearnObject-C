@@ -18,5 +18,6 @@ typedef struct ListNode
 
 void addToTail(ListNode** pHead,int value);
 void printListReversinglyAndRecursively(ListNode* pHead);
+void printListReversinglyAndIteratively(ListNode* pHead);
 ListNode* creatAList(int nodesCount);
 #endif /* List_h */
