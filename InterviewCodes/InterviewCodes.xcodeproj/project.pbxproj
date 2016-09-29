@@ -14,6 +14,7 @@
 		B84C79F71D996E43009F5BB6 /* Interview04.c in Sources */ = {isa = PBXBuildFile; fileRef = B84C79F51D996E43009F5BB6 /* Interview04.c */; };
 		B8B4D5EE1D99704800B4FB3D /* List.c in Sources */ = {isa = PBXBuildFile; fileRef = B8B4D5EC1D99704800B4FB3D /* List.c */; };
 		B8B4D6001D9ACAE900B4FB3D /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = B8B4D5FE1D9ACAE900B4FB3D /* Stack.c */; };
+		B8F6D8041D9D75460073143B /* BinaryTree.c in Sources */ = {isa = PBXBuildFile; fileRef = B8F6D8021D9D75460073143B /* BinaryTree.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,8 @@
 		B8B4D5ED1D99704800B4FB3D /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		B8B4D5FE1D9ACAE900B4FB3D /* Stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Stack.c; sourceTree = "<group>"; };
 		B8B4D5FF1D9ACAE900B4FB3D /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		B8F6D8021D9D75460073143B /* BinaryTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BinaryTree.c; sourceTree = "<group>"; };
+		B8F6D8031D9D75460073143B /* BinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 			children = (
 				B8B4D5EC1D99704800B4FB3D /* List.c */,
 				B8B4D5ED1D99704800B4FB3D /* List.h */,
+				B8F6D8021D9D75460073143B /* BinaryTree.c */,
+				B8F6D8031D9D75460073143B /* BinaryTree.h */,
 				B8B4D5FE1D9ACAE900B4FB3D /* Stack.c */,
 				B8B4D5FF1D9ACAE900B4FB3D /* Stack.h */,
 			);
@@ -158,6 +163,7 @@
 			files = (
 				B8189E201D92E0620083EFEE /* interview02.c in Sources */,
 				B8B4D5EE1D99704800B4FB3D /* List.c in Sources */,
+				B8F6D8041D9D75460073143B /* BinaryTree.c in Sources */,
 				B8189E1D1D918CF90083EFEE /* Interview01.c in Sources */,
 				B8189E261D9438860083EFEE /* Interview03.c in Sources */,
 				B84C79F71D996E43009F5BB6 /* Interview04.c in Sources */,
