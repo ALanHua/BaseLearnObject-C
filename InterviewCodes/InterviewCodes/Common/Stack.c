@@ -31,6 +31,19 @@ bool isStackEmpty(Stack* s)
     return s->top == NULL;
 }
 
+Stack* stackCreate(void)
+{
+    Stack* s = (Stack*)malloc(sizeof(Stack));
+    initStack(s);
+    return s;
+}
+
+void stackDestory(Stack* s)
+{
+    free(s->top);
+    free(s);
+}
+
 typedef struct{
     List_head member;
     int data;

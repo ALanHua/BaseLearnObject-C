@@ -11,6 +11,8 @@
 
 #include <stdio.h>
 #include <stdbool.h>
+#include <stdlib.h>
+
 typedef struct list{
     struct list* next;
 }List_head;
@@ -21,7 +23,8 @@ typedef struct {
 
 #define list_emtry(type,pos,member) \
 (type*)((char*)pos-(unsigned long)(&((type*)0)->member))
-
+Stack* stackCreate(void);
+void stackDestory(Stack* s);
 void initStack(Stack* s);
 void stackPush(Stack* s,List_head* p);
 List_head* stackPop(Stack* s);
