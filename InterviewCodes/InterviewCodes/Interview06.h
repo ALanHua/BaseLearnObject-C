@@ -17,5 +17,5 @@ typedef struct StackQueue{
     Stack* pIn;
     Stack* pOut;
 }StackQueue;
-
+void interView06Test(void);
 #endif /* Interview06_h */

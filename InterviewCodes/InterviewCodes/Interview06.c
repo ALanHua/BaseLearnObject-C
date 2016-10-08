@@ -36,8 +36,43 @@ void queuePush(StackQueue* queue,inData* data)
 
 inData* queuePop(StackQueue* queue)
 {
-    if (queue->pOut->top == NULL) {
-        
+    List_head* pNode;
+    inData* pInData;
+    inData* pOutData;
+    if (isStackEmpty(queue->pOut)) {// 都出栈了
+        while (!isStackEmpty(queue->pIn)) {
+            pNode = stackPop(queue->pIn);
+            pInData = list_emtry(inData, pNode, member);
+            stackPush(queue->pOut, &pInData->member);
+        }
     }
-    return NULL;
+    pNode = stackPop(queue->pOut);
+    pOutData = list_emtry(inData, pNode, member);
+    return pOutData;
+}
+int queuePopDataType(StackQueue* queue)
+{
+    inData* pOutData;
+    pOutData = queuePop(queue);
+    return pOutData->data;
+}
+
+void interView06Test(void)
+{
+    StackQueue* queue;
+    queue = queueCreate();
+    inData d1;
+    d1.data = 10;
+    queuePush(queue, &d1);
+    inData d2;
+    d2.data = 20;
+    queuePush(queue, &d2);
+    inData d3;
+    d3.data = 30;
+    queuePush(queue, &d3);
+    //
+    for (int i = 0; i < 3 ; i++) {
+        printf("%d ",queuePopDataType(queue));
+    }
+    printf("\n");
 }
