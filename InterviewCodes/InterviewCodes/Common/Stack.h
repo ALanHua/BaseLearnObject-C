@@ -42,5 +42,4 @@ void stackPush(Stack* s,List_head* p);
 List_head* stackPop(Stack* s);
 bool isStackEmpty(Stack* s);
 
-void stackMoudleTest2(void);
 #endif /* Stack_h */

@@ -12,10 +12,9 @@
 #include "Interview03.h"
 #include "Interview04.h"
 #include "Interview06.h"
-#include "Stack.h"
+
 int main(int argc, const char * argv[]) {
     
 //    interView06Test();
-    stackMoudleTest2();
     return 0;
 }

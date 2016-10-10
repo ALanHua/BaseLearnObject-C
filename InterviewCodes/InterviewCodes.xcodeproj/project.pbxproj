@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B803B58A1DABE55C0014C66C /* Interview07.c in Sources */ = {isa = PBXBuildFile; fileRef = B803B5891DABE55C0014C66C /* Interview07.c */; };
 		B8189E151D918CDC0083EFEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8189E141D918CDC0083EFEE /* main.m */; };
 		B8189E1D1D918CF90083EFEE /* Interview01.c in Sources */ = {isa = PBXBuildFile; fileRef = B8189E1B1D918CF90083EFEE /* Interview01.c */; };
 		B8189E201D92E0620083EFEE /* interview02.c in Sources */ = {isa = PBXBuildFile; fileRef = B8189E1E1D92E0620083EFEE /* interview02.c */; };
@@ -32,6 +33,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B803B5871DABE5410014C66C /* Interview07.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Interview07.h; path = InterviewCodes/Interview07.h; sourceTree = SOURCE_ROOT; };
+		B803B5891DABE55C0014C66C /* Interview07.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Interview07.c; sourceTree = "<group>"; };
 		B8189E111D918CDC0083EFEE /* InterviewCodes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InterviewCodes; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8189E141D918CDC0083EFEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8189E1B1D918CF90083EFEE /* Interview01.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Interview01.c; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				B834818C1DA349C100458CF6 /* InterView05.c */,
 				B849BDC81DA7F06A00D76D60 /* Interview06.c */,
 				B849BDC91DA7F06A00D76D60 /* Interview06.h */,
+				B803B5871DABE5410014C66C /* Interview07.h */,
+				B803B5891DABE55C0014C66C /* Interview07.c */,
 			);
 			path = InterviewCodes;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				B8F6D8041D9D75460073143B /* BinaryTree.c in Sources */,
 				B8189E1D1D918CF90083EFEE /* Interview01.c in Sources */,
 				B8189E261D9438860083EFEE /* Interview03.c in Sources */,
+				B803B58A1DABE55C0014C66C /* Interview07.c in Sources */,
 				B84C79F71D996E43009F5BB6 /* Interview04.c in Sources */,
 				B849BDCA1DA7F06A00D76D60 /* Interview06.c in Sources */,
 				B8189E151D918CDC0083EFEE /* main.m in Sources */,
