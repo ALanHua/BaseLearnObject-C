@@ -10,7 +10,8 @@
 #define Interview07_h
 
 #include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
+#include <string.h>
 
+void interView07Test(void);
 #endif /* Interview07_h */

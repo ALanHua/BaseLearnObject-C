@@ -12,9 +12,10 @@
 #include "Interview03.h"
 #include "Interview04.h"
 #include "Interview06.h"
+#include "Interview07.h"
 
 int main(int argc, const char * argv[]) {
     
-//    interView06Test();
+    interView07Test();
     return 0;
 }
