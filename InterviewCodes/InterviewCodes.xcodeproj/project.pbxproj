@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B803B58A1DABE55C0014C66C /* Interview07.c in Sources */ = {isa = PBXBuildFile; fileRef = B803B5891DABE55C0014C66C /* Interview07.c */; };
 		B803B5901DAD409D0014C66C /* Sort.c in Sources */ = {isa = PBXBuildFile; fileRef = B803B58E1DAD409D0014C66C /* Sort.c */; };
+		B803B59B1DB526F50014C66C /* InterView08.c in Sources */ = {isa = PBXBuildFile; fileRef = B803B5991DB526F50014C66C /* InterView08.c */; };
 		B8189E151D918CDC0083EFEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8189E141D918CDC0083EFEE /* main.m */; };
 		B8189E1D1D918CF90083EFEE /* Interview01.c in Sources */ = {isa = PBXBuildFile; fileRef = B8189E1B1D918CF90083EFEE /* Interview01.c */; };
 		B8189E201D92E0620083EFEE /* interview02.c in Sources */ = {isa = PBXBuildFile; fileRef = B8189E1E1D92E0620083EFEE /* interview02.c */; };
@@ -38,6 +39,8 @@
 		B803B5891DABE55C0014C66C /* Interview07.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Interview07.c; sourceTree = "<group>"; };
 		B803B58E1DAD409D0014C66C /* Sort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Sort.c; sourceTree = "<group>"; };
 		B803B58F1DAD409D0014C66C /* Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
+		B803B5991DB526F50014C66C /* InterView08.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = InterView08.c; sourceTree = "<group>"; };
+		B803B59A1DB526F50014C66C /* InterView08.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterView08.h; sourceTree = "<group>"; };
 		B8189E111D918CDC0083EFEE /* InterviewCodes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InterviewCodes; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8189E141D918CDC0083EFEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8189E1B1D918CF90083EFEE /* Interview01.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Interview01.c; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 				B849BDC91DA7F06A00D76D60 /* Interview06.h */,
 				B803B5871DABE5410014C66C /* Interview07.h */,
 				B803B5891DABE55C0014C66C /* Interview07.c */,
+				B803B5991DB526F50014C66C /* InterView08.c */,
+				B803B59A1DB526F50014C66C /* InterView08.h */,
 			);
 			path = InterviewCodes;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			files = (
 				B834818D1DA349C100458CF6 /* InterView05.c in Sources */,
 				B8189E201D92E0620083EFEE /* interview02.c in Sources */,
+				B803B59B1DB526F50014C66C /* InterView08.c in Sources */,
 				B8B4D5EE1D99704800B4FB3D /* List.c in Sources */,
 				B8F6D8041D9D75460073143B /* BinaryTree.c in Sources */,
 				B8189E1D1D918CF90083EFEE /* Interview01.c in Sources */,
