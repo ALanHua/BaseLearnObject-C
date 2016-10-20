@@ -17,6 +17,7 @@
 		B834818D1DA349C100458CF6 /* InterView05.c in Sources */ = {isa = PBXBuildFile; fileRef = B834818C1DA349C100458CF6 /* InterView05.c */; };
 		B849BDCA1DA7F06A00D76D60 /* Interview06.c in Sources */ = {isa = PBXBuildFile; fileRef = B849BDC81DA7F06A00D76D60 /* Interview06.c */; };
 		B84C79F71D996E43009F5BB6 /* Interview04.c in Sources */ = {isa = PBXBuildFile; fileRef = B84C79F51D996E43009F5BB6 /* Interview04.c */; };
+		B87F56D91DB91F6500243652 /* Interview09.c in Sources */ = {isa = PBXBuildFile; fileRef = B87F56D71DB91F6500243652 /* Interview09.c */; };
 		B8B4D5EE1D99704800B4FB3D /* List.c in Sources */ = {isa = PBXBuildFile; fileRef = B8B4D5EC1D99704800B4FB3D /* List.c */; };
 		B8B4D6001D9ACAE900B4FB3D /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = B8B4D5FE1D9ACAE900B4FB3D /* Stack.c */; };
 		B8F6D8041D9D75460073143B /* BinaryTree.c in Sources */ = {isa = PBXBuildFile; fileRef = B8F6D8021D9D75460073143B /* BinaryTree.c */; };
@@ -55,6 +56,8 @@
 		B849BDC91DA7F06A00D76D60 /* Interview06.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interview06.h; sourceTree = "<group>"; };
 		B84C79F51D996E43009F5BB6 /* Interview04.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Interview04.c; sourceTree = "<group>"; };
 		B84C79F61D996E43009F5BB6 /* Interview04.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interview04.h; sourceTree = "<group>"; };
+		B87F56D71DB91F6500243652 /* Interview09.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Interview09.c; sourceTree = "<group>"; };
+		B87F56D81DB91F6500243652 /* Interview09.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interview09.h; sourceTree = "<group>"; };
 		B8B4D5EC1D99704800B4FB3D /* List.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = List.c; sourceTree = "<group>"; };
 		B8B4D5ED1D99704800B4FB3D /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		B8B4D5FE1D9ACAE900B4FB3D /* Stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Stack.c; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 				B803B5891DABE55C0014C66C /* Interview07.c */,
 				B803B5991DB526F50014C66C /* InterView08.c */,
 				B803B59A1DB526F50014C66C /* InterView08.h */,
+				B87F56D71DB91F6500243652 /* Interview09.c */,
+				B87F56D81DB91F6500243652 /* Interview09.h */,
 			);
 			path = InterviewCodes;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87F56D91DB91F6500243652 /* Interview09.c in Sources */,
 				B834818D1DA349C100458CF6 /* InterView05.c in Sources */,
 				B8189E201D92E0620083EFEE /* interview02.c in Sources */,
 				B803B59B1DB526F50014C66C /* InterView08.c in Sources */,
