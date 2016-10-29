@@ -20,6 +20,7 @@
 		B87F56D91DB91F6500243652 /* Interview09.c in Sources */ = {isa = PBXBuildFile; fileRef = B87F56D71DB91F6500243652 /* Interview09.c */; };
 		B8B4D5EE1D99704800B4FB3D /* List.c in Sources */ = {isa = PBXBuildFile; fileRef = B8B4D5EC1D99704800B4FB3D /* List.c */; };
 		B8B4D6001D9ACAE900B4FB3D /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = B8B4D5FE1D9ACAE900B4FB3D /* Stack.c */; };
+		B8D897361DC39D71005977F7 /* SingleList.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D897341DC39D71005977F7 /* SingleList.c */; };
 		B8F6D8041D9D75460073143B /* BinaryTree.c in Sources */ = {isa = PBXBuildFile; fileRef = B8F6D8021D9D75460073143B /* BinaryTree.c */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,8 @@
 		B8B4D5ED1D99704800B4FB3D /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		B8B4D5FE1D9ACAE900B4FB3D /* Stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Stack.c; sourceTree = "<group>"; };
 		B8B4D5FF1D9ACAE900B4FB3D /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		B8D897341DC39D71005977F7 /* SingleList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SingleList.c; sourceTree = "<group>"; };
+		B8D897351DC39D71005977F7 /* SingleList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleList.h; sourceTree = "<group>"; };
 		B8F6D8021D9D75460073143B /* BinaryTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BinaryTree.c; sourceTree = "<group>"; };
 		B8F6D8031D9D75460073143B /* BinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +134,8 @@
 				B8B4D5FF1D9ACAE900B4FB3D /* Stack.h */,
 				B803B58E1DAD409D0014C66C /* Sort.c */,
 				B803B58F1DAD409D0014C66C /* Sort.h */,
+				B8D897341DC39D71005977F7 /* SingleList.c */,
+				B8D897351DC39D71005977F7 /* SingleList.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 				B803B59B1DB526F50014C66C /* InterView08.c in Sources */,
 				B8B4D5EE1D99704800B4FB3D /* List.c in Sources */,
 				B8F6D8041D9D75460073143B /* BinaryTree.c in Sources */,
+				B8D897361DC39D71005977F7 /* SingleList.c in Sources */,
 				B8189E1D1D918CF90083EFEE /* Interview01.c in Sources */,
 				B8189E261D9438860083EFEE /* Interview03.c in Sources */,
 				B803B58A1DABE55C0014C66C /* Interview07.c in Sources */,
