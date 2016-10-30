@@ -43,6 +43,9 @@ struct single_list {
     void (*clear)(struct single_list * list);
     void (*deletor)(struct single_list *list);
 };
+
+#define single_list_entry(type,pos,member) \
+(type*)((char*)pos-(unsigned long)(&((type*)0)->member))
 struct single_list * new_single_list(list_op_free_node op_free, list_op_key_hit_test op_cmp);
 
 #endif /* SingleList_h */
