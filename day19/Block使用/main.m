@@ -83,6 +83,17 @@ void test02(void)
 }
 
 
+typedef double (^multiplyTwoValue)(double,double);
+
+void test03(void)
+{
+    multiplyTwoValue bFunc = ^(double firstValue,double secondValue){
+        return firstValue * secondValue;
+    };
+    double result = bFunc(3,4);
+    NSLog(@"The result is %lf",result);
+}
+
 int main(int argc, const char * argv[]) {
 
 //1    someMethod();
@@ -90,7 +101,7 @@ int main(int argc, const char * argv[]) {
 //3    a(true);
 //4    NSLog(@"%d",maxIntBlock(3,5));
 //5    __blockTest();
-    test02();
+    test03();
     
     return 0;
 }
