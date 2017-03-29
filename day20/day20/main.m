@@ -41,6 +41,28 @@ typedef NS_OPTIONS(NSUInteger,WWPernittedDirection){
  copy      --- 设置方法不保留新值，而是将其拷贝
  */
 
+/*
+ 大小端 0x12345678
+ 大端 ------ 12 34 56 78
+ 小端 ------ 78 56 34 12
+ */
+union test{
+    short i;
+    char  str[sizeof(short)];
+};
+
+void littleOrBigEndianTest(void)
+{
+    union test tt;
+    tt.i = 0x1234;
+    if (sizeof(short) == 2) {
+        if ((tt.str[0] == 0x12) && (tt.str[1] = 0x34)) {
+            NSLog(@"大端，0:0x%x,1:0x%x",tt.str[0],tt.str[1]);
+        }else{
+            NSLog(@"小端，0:0x%x,1:0x%x",tt.str[0],tt.str[1]);
+        }
+    }
+}
 
 
 int main(int argc, const char * argv[]) {
@@ -56,6 +78,8 @@ int main(int argc, const char * argv[]) {
         BOOL equalC = [foo isEqualToString:bar];
         NSLog(@"%p,%p",foo,bar);
         NSLog(@"%d,%d，%d",equalA,equalB,equalC);
+//        NSLog(@"shrt %zd",sizeof(short));
+        littleOrBigEndianTest();
     }
     return 0;
 }
