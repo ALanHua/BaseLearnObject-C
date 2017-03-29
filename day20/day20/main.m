@@ -41,11 +41,21 @@ typedef NS_OPTIONS(NSUInteger,WWPernittedDirection){
  copy      --- 设置方法不保留新值，而是将其拷贝
  */
 
+
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSLog(@"%f",kAnimationDuration);
         WWWWConnectionState e = WWWWConnectionStateConnected;
         NSLog(@"%d",e);
+        // 对象同性
+        NSString* foo = @"Badge 123";
+        NSString* bar = [NSString stringWithFormat:@"Badge %i",123];
+        BOOL equalA = (foo == bar);
+        BOOL equalB = [foo isEqual:bar];
+        BOOL equalC = [foo isEqualToString:bar];
+        NSLog(@"%p,%p",foo,bar);
+        NSLog(@"%d,%d，%d",equalA,equalB,equalC);
     }
     return 0;
 }

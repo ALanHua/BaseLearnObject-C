@@ -10,6 +10,7 @@
 		B85A46011E82B40C00057AD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B85A46001E82B40C00057AD5 /* main.m */; };
 		B85A46071E82B6AD00057AD5 /* YHPInsertSort.m in Sources */ = {isa = PBXBuildFile; fileRef = B85A46061E82B6AD00057AD5 /* YHPInsertSort.m */; };
 		B88250F61E7ECFD4007E9954 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B88250F51E7ECFD4007E9954 /* main.m */; };
+		B89513111E8AA2DD0056FD48 /* YHPQuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = B89513101E8AA2DD0056FD48 /* YHPQuickSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		B85A46061E82B6AD00057AD5 /* YHPInsertSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHPInsertSort.m; sourceTree = "<group>"; };
 		B88250F21E7ECFD4007E9954 /* day20 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = day20; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88250F51E7ECFD4007E9954 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B895130F1E8AA2DD0056FD48 /* YHPQuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHPQuickSort.h; sourceTree = "<group>"; };
+		B89513101E8AA2DD0056FD48 /* YHPQuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHPQuickSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 				B85A46001E82B40C00057AD5 /* main.m */,
 				B85A46051E82B6AD00057AD5 /* YHPInsertSort.h */,
 				B85A46061E82B6AD00057AD5 /* YHPInsertSort.m */,
+				B895130F1E8AA2DD0056FD48 /* YHPQuickSort.h */,
+				B89513101E8AA2DD0056FD48 /* YHPQuickSort.m */,
 			);
 			path = algoSort;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			files = (
 				B85A46071E82B6AD00057AD5 /* YHPInsertSort.m in Sources */,
 				B85A46011E82B40C00057AD5 /* main.m in Sources */,
+				B89513111E8AA2DD0056FD48 /* YHPQuickSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +323,7 @@
 				B85A46031E82B40C00057AD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B88250ED1E7ECFD4007E9954 /* Build configuration list for PBXProject "day20" */ = {
 			isa = XCConfigurationList;
