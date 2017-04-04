@@ -63,7 +63,104 @@ void littleOrBigEndianTest(void)
         }
     }
 }
+id genericTypeString = @"Some string"; // 分配在堆上
 
+/***
+ description 
+ debugDescription 
+ 实现打印更多类信息
+ */
+
+/**
+ 链表
+ */
+typedef struct tagNode Node;
+struct tagNode
+{
+    int data;
+    Node* next;
+};
+
+/**
+ 删除链表节点
+ @param cur 链表
+ */
+void deleteRandomNode(Node* cur)
+{
+    assert(cur != NULL);
+    assert(cur->next != NULL);
+    Node* pNext = cur->next;
+    cur->next = pNext->next;
+    cur->data = pNext->data;
+    free(pNext);
+}
+
+
+/**
+ 反转链表
+ @param pHead 链表头节点
+ @return 反转好的链表
+ */
+Node* reverseByLoop(Node* pHead)
+{
+    if (pHead == NULL || pHead->next == NULL) {
+        return pHead;
+    }
+    
+    Node* pPrev = NULL;
+    Node* pNext = NULL;
+    
+    while (pHead != NULL) {
+        pNext = pHead->next;
+        pHead->next = pPrev;
+        pPrev = pHead;
+        pHead = pNext;
+    }
+    return pPrev;
+}
+
+Node* reverseByRecursion(Node* pHead)
+{
+    if (pHead == NULL || pHead->next == NULL) {
+        return pHead;
+    }
+    
+    Node* pNewNode = reverseByRecursion(pHead->next);
+    pHead->next->next = pHead;
+    pHead->next = NULL;
+    
+    return pNewNode;
+}
+
+/**
+ 求链表倒数第k个及诶点
+ @param pHead 头结点
+ @param k 第几个
+ @return 第几个节点
+ */
+Node* theKtheNode(Node* pHead,int k)
+{
+    if (k < 0) {
+        return NULL;
+    }
+    
+    Node* pSlow = pHead;
+    Node* pFast = pHead;
+    int i = k;
+    for (; i > 0 && pFast != NULL;i--) {
+        pFast = pFast->next;
+    }
+    
+    if (i > 0) {
+        return NULL;// k 值大于原链表长度的异常
+    }
+    
+    while (pFast != NULL) {
+        pFast = pFast->next;
+        pSlow = pSlow->next;
+    }
+    return pSlow;
+}
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
