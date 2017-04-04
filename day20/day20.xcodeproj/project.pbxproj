@@ -36,6 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B806CDB31E93F19A00250B8F /* YHPPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHPPerson.h; sourceTree = "<group>"; };
 		B85A45FE1E82B40C00057AD5 /* algoSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algoSort; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85A46001E82B40C00057AD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B85A46051E82B6AD00057AD5 /* YHPInsertSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHPInsertSort.h; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 				B88250F51E7ECFD4007E9954 /* main.m */,
 				B89513571E8D5B740056FD48 /* YHPDay20.h */,
 				B89513581E8D5B740056FD48 /* YHPDay20.m */,
+				B806CDB31E93F19A00250B8F /* YHPPerson.h */,
 			);
 			path = day20;
 			sourceTree = "<group>";
