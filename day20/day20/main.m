@@ -162,6 +162,19 @@ Node* theKtheNode(Node* pHead,int k)
     return pSlow;
 }
 
+void* alignedMalloc(size_t size,size_t alignement)
+{
+    const size_t pointerSize = sizeof(void*);
+    const size_t requestedSize = size + alignement - 1 + pointerSize;
+    
+    void* raw = malloc(requestedSize);
+    uintptr_t start  = (uintptr_t)raw + pointerSize;
+    void* aligned = (void*)((start + alignement - 1) & ~(alignement -1));
+    *(void**)((uintptr_t)aligned - pointerSize) = raw;
+    
+    return aligned;
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSLog(@"%f",kAnimationDuration);
